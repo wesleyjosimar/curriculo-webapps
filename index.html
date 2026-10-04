@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Currículo online de Wesley Lima, profissional de infraestrutura de TI e redes.">
+  <title>Wesley Lima | Infraestrutura e Redes</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="container nav-wrap">
+      <a class="marca" href="#inicio" aria-label="Wesley Lima, início">WL<span>.</span></a>
+      <nav aria-label="Navegação principal">
+        <ul class="menu">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#conhecimentos">Conhecimentos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero container" id="inicio" aria-labelledby="titulo-principal">
+      <div class="hero-texto">
+        <p class="sobretitulo">TECNOLOGIA • REDES • INFRAESTRUTURA</p>
+        <h1 id="titulo-principal">Oi, eu sou <span>Wesley Lima.</span></h1>
+        <p class="resumo">Trabalho com infraestrutura de TI e redes. Gosto de entender como as coisas funcionam, resolver problemas e deixar os ambientes mais estáveis e seguros.</p>
+        <div class="acoes">
+          <a class="botao primario" href="#contato">Falar comigo</a>
+          <button class="botao secundario" id="btn-boas-vindas" type="button">Dar um oi</button>
+        </div>
+        <p class="mensagem" id="mensagem-boas-vindas" aria-live="polite"></p>
+      </div>
+      <figure class="hero-imagem">
+        <img src="media/infraestrutura.svg" alt="Ilustração de um monitor com conexões de rede e equipamentos de infraestrutura.">
+        <figcaption>Conectando pessoas, sistemas e ideias.</figcaption>
+      </figure>
+    </section>
+
+    <section class="secao sobre" id="sobre" aria-labelledby="titulo-sobre">
+      <div class="container">
+        <p class="sobretitulo">UM POUCO SOBRE MIM</p>
+        <h2 id="titulo-sobre">Tecnologia na prática</h2>
+        <div class="sobre-grid">
+          <article class="cartao texto-sobre">
+            <h3>O que eu faço</h3>
+            <p>Minha área é infraestrutura e redes de computadores. Tenho interesse em conectividade, segurança e em encontrar soluções práticas para os problemas do dia a dia de TI.</p>
+            <p>Também sigo estudando e montando laboratórios para testar configurações e aprender coisas novas na prática.</p>
+          </article>
+          <article class="cartao">
+            <h3>O que valorizo</h3>
+            <ul class="lista">
+              <li>Resolver problemas com calma e método</li>
+              <li>Documentar o que foi configurado</li>
+              <li>Aprender e compartilhar conhecimento</li>
+              <li>Manter ambientes organizados e seguros</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao conhecimentos" id="conhecimentos" aria-labelledby="titulo-conhecimentos">
+      <div class="container">
+        <p class="sobretitulo">NO MEU RADAR</p>
+        <h2 id="titulo-conhecimentos">Conhecimentos e interesses</h2>
+        <p class="introducao">Alguns temas que fazem parte da minha rotina e dos meus estudos.</p>
+        <div class="habilidades">
+          <article class="habilidade">
+            <span class="numero">01</span>
+            <h3>Redes</h3>
+            <p>TCP/IP, roteamento, switching e troubleshooting.</p>
+          </article>
+          <article class="habilidade">
+            <span class="numero">02</span>
+            <h3>Segurança</h3>
+            <p>Firewalls Fortinet e SonicWall, controle de acesso e boas práticas.</p>
+          </article>
+          <article class="habilidade">
+            <span class="numero">03</span>
+            <h3>Infraestrutura</h3>
+            <p>Monitoramento, serviços, documentação e suporte técnico.</p>
+          </article>
+          <article class="habilidade">
+            <span class="numero">04</span>
+            <h3>Aprendizado</h3>
+            <p>Laboratórios, Linux, automação e novas tecnologias.</p>
+          </article>
+        </div>
+        <button class="botao secundario" id="btn-detalhes" type="button" aria-expanded="false" aria-controls="detalhes-estudo">Ver o que estou estudando</button>
+        <div class="detalhes" id="detalhes-estudo" hidden>
+          <p>No momento, quero continuar evoluindo em redes, segurança e ferramentas que ajudem a diagnosticar problemas com mais rapidez. Este espaço pode ser atualizado conforme eu concluir cursos e projetos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao contato" id="contato" aria-labelledby="titulo-contato">
+      <div class="container contato-grid">
+        <div>
+          <p class="sobretitulo">VAMOS CONVERSAR?</p>
+          <h2 id="titulo-contato">Entre em contato</h2>
+          <p>Quer trocar uma ideia sobre tecnologia, redes ou oportunidades? Pode me chamar.</p>
+          <div class="links-contato">
+            <!-- Troque os links abaixo pelos seus perfis reais antes de publicar. -->
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          </div>
+        </div>
+        <form id="form-contato" class="formulario">
+          <label for="nome">Seu nome</label>
+          <input id="nome" name="nome" type="text" placeholder="Como você se chama?" autocomplete="name" required>
+          <label for="email">Seu e-mail</label>
+          <input id="email" name="email" type="email" placeholder="voce@exemplo.com" autocomplete="email" required>
+          <button class="botao primario" type="submit">Preparar mensagem</button>
+          <p class="form-nota">O formulário não envia dados para um servidor; ele só demonstra a interação com JavaScript.</p>
+          <p id="resultado-form" class="mensagem" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-wrap">
+      <p>Feito por Wesley Lima • Projeto de Webapps</p>
+      <a href="#inicio">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
